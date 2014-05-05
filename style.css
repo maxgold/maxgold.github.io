@@ -1,16 +1,23 @@
 h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-body {
   display: inline-block;
     -moz-transform: scale(-1, 1); 
     -webkit-transform: scale(-1, 1);  
     transform: scale(-1, 1); 
+  
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+    -moz-transform: scale(-1, 1); 
+    -webkit-transform: scale(-1, 1);  
+    transform: scale(-1, 1); 
+  
+  text-align: center;
+}
+
+body {
+  
 
   font-family: helvetica neue; 
   font-size: 14pt;
@@ -20,7 +27,10 @@ body {
 }
 
 p {
-  
+  display: inline-block;
+    -moz-transform: scale(-1, 1); 
+    -webkit-transform: scale(-1, 1);  
+    transform: scale(-1, 1); 
 }
 
 img{
