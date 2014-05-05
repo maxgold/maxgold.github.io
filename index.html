@@ -52,6 +52,15 @@
 
 <input type="button" onclick="flip()" value="Decipher" />
 
+<script type="text/javascript">
+			function flip() {
+				$("body").css("-moztransform", "scale(1,1)");
+				$("body").css("-webkittransform", "scale(1,1)");
+                $("body").css("transform", "scale(1,1)");
+			}
+			
+		</script>
+
 
 </body>
 
