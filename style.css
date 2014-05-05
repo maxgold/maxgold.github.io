@@ -13,3 +13,8 @@ body {
   color: #333;
   background-color: #EEE;
 }
+
+
+img{
+  transform: rotate(90deg);
+}
