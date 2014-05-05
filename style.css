@@ -7,6 +7,10 @@ h2 {
 }
 
 body {
+  display: inline-block;
+    -moz-transform: scale(-1, 1); 
+    -webkit-transform: scale(-1, 1);  
+    transform: scale(-1, 1); 
 
   font-family: helvetica neue; 
   font-size: 14pt;
@@ -16,10 +20,7 @@ body {
 }
 
 p {
-  display: inline-block;
-    -moz-transform: scale(-1, 1); 
-    -webkit-transform: scale(-1, 1);  
-    transform: scale(-1, 1); 
+  
 }
 
 img{
