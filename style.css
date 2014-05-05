@@ -1,17 +1,9 @@
 h1 {
-  display: inline-block;
-    -moz-transform: scale(-1, 1); 
-    -webkit-transform: scale(-1, 1);  
-    transform: scale(-1, 1); 
   
   text-align: center;
 }
 
 h2 {
-  display: inline-block;
-    -moz-transform: scale(-1, 1); 
-    -webkit-transform: scale(-1, 1);  
-    transform: scale(-1, 1); 
   
   text-align: center;
 }
@@ -26,24 +18,19 @@ body {
   background-color: #EEE;
 }
 
-p {
-  display: inline-block;
-    -moz-transform: scale(-1, 1); 
-    -webkit-transform: scale(-1, 1);  
-    transform: scale(-1, 1); 
-}
 
 img{
   transform: rotate(90deg);
 }
 
-li{
+
+
+.reverse{
   display: inline-block;
     -moz-transform: scale(-1, 1); 
     -webkit-transform: scale(-1, 1);  
     transform: scale(-1, 1); 
 }
-
 
 
 
