@@ -22,8 +22,11 @@
 
 <br> <p class="reverse">Click the button below to invert the picture </p>
 
-<br> <input type="button" class="reverse" onclick="invert()" value="Invert the picture!" />
+<br> <input type="button" class="reverse" onclick="invert()" value="Invert the webpage!" />
 
+<br> <p class="reverse"> Do the inverted colors annoy you? Click this button to restore it to its original state</p>
+
+<br> <input type="button" class="reverse" onclick="uninvert()" value="Restore the page!" />
 
 <br>
 <h1 class="reverse"> About me </h1>
@@ -89,6 +92,11 @@
 				$("body").css("color", "blue")
 				$("body").css("background-color", "white")
 				$("img").css("-webkit-filter", "invert(100%)")
+			}
+			function uninvert() {
+				$("body").css("color", "orange")
+				$("body").css("background-color", "black")
+				$("img").css("-webkit-filter", "invert(0%)")
 			}
 		</script>
 </body>
