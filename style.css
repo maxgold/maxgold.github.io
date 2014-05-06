@@ -24,7 +24,9 @@ img{
     transform: scale(-1, 1); 
 }
 
-
+img {
+ -webkit-filter: invert(100%);  
+}
 
 
 
