@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="style2.css">
+  </head>
+
+<html>
+<body>
+
+
+
+<script>
+	var correct = Math.floor((Math.random()*10)+1);
+	var guess = prompt("Guess a number between 1 and 10");	
+	var tries = 1;
+	while (guess != correct) {
+ 
+		if (correct <  guess) {
+			alert("You guessed too high");
+			var guess = prompt("Guess again");
+			tries++;
+		}
+		else {
+			alert("You guessed too low");
+			var guess = prompt("Guess again");
+			tries++;
+ 		}
+	}
+	alert("Your guess was correct! It took you " + tries + " tries. Good job. Reload the page to play again.");
+
+</script>
+
+
+</body>
+
+</html>
