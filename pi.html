@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
+    <script type="text/processing" data-processing-target="targetcanvas">
+      void setup() 
+      {
+        size(400, 400); 
+        noStroke();
+        colorMode(RGB, 255, 255, 255, 100);
+        rectMode(CENTER);
+      }
+      background(255, 255, 255);
+      var hits, total;
+      strokeWeight(2);
+      void drawPoint() {
+        var x = random(20, 380);
+        var y = random(20, 380);
+        if (pow(x - 200, 2) + pow(y - 200, 2) < pow(180, 2)) {
+            stroke(4, 199, 10);
+            point(x, y);
+            hits ++;
+            total ++;
+        }
+        else {
+            stroke(5, 5, 5);
+            point(x, y );
+            total ++;
+        }
+      }
+      
+      void draw() 
+      {   
+        for (var i =0; i<50; i +=1) {
+            drawPoint();
+        
+        }
+        
+        
+        //debug(hits/total*4.0);       
+        //println(hits/total*4); 
+        
+        if (total % 1000 == 0) {
+          noStroke();
+          fill(255, 255, 255);
+          rect(2, 397, 800, -27);
+          fill(255, 0, 0);
+          text("Total: " + total, 5, 394);
+          text("Dots inside circle: " + hits, 91, 394);
+          text("Pi:" + nf(hits/total*4, 1, 5), 240, 394);
+        }
+      }
+    </script>    
+  </head>
+
+  <body>
+    <canvas id="targetcanvas" width="400" height="400"></canvas>
+  </body>
+</html>
