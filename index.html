@@ -5,12 +5,11 @@
         <meta charset="utf-8" />
         <title> Max's Bio </title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="code.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         
     </head>
 
-
+</html>
 
 <body>
     <br /> 
@@ -35,71 +34,81 @@
 
     <br />
     <h1 class="reverse"> About me </h1>
-	<p class="reverse"> My name is Max Goldstein. I am 17 years old. I am a senior at Saint Mary's College High School. I spent the first several years of my life in New York. I am Native American. I eat Gordo's burritos at least 3 times a week.</p>
+    <p class="reverse"> My name is Max Goldstein. I am 17 years old. I am a senior at Saint Mary's College High School. I spent the first several years of my life in New York. I am Native American. I eat Gordo's burritos at least 3 times a week.</p>
 
     <br /> 
     <h1 class="reverse"> Favorite hobbies </h1>
     
     <br /> 
-  	<ul class="reverse">
-    	    <li> Math </li>
-    	    <li> Baseball </li>
-    	    <li> Hanging out </li>
-    	    <li> Reading </li>
-    	    	
-    	</ul>
+    <ul class="reverse">
+            <li> Math </li>
+            <li> Baseball </li>
+            <li> Hanging out </li>
+            <li> Reading </li>
+                
+        </ul>
 
-	<br /> 
-	<h1 class="reverse"> Favorite Sports </h1>
- 	<br />
- 	<p class="reverse"> My favorite sport is baseball. This year I started playing soccer and I find that much fun as well. My favorite sports team is the New York Yankees. </p>
+    <br /> 
+    <h1 class="reverse"> Favorite Sports </h1>
+    <br />
+    <p class="reverse"> My favorite sport is baseball. This year I started playing soccer and I find that much fun as well. My favorite sports team is the New York Yankees. </p>
 
-	<br /> 
-	<h1 class="reverse"> Favorite Foods </h1>
-  	<br /> 
-  	   <ul class="reverse">
-    	      <li> Pizza </li>
-    	      <li> Ice Cream </li>
-    	      <li> Cheese </li>
-  	   </ul>
+    <br /> 
+    <h1 class="reverse"> Favorite Foods </h1>
+    <br /> 
+       <ul class="reverse">
+              <li> Pizza </li>
+              <li> Ice Cream </li>
+              <li> Cheese </li>
+       </ul>
 
-	<br />
-	<h1 class="reverse"> Favorite websites </h1>
-	 <br />
-  	   <ul class="reverse">
-    	      <li><a href="http://math.stackexchange.com/">math.stackexchange.com</a></li>
-    	      <li><a href="http://mathoverflow.net/">mathoverflow.net</a></li>
-    	      <li><a href="http://wikipedia.org/">wikipedia.org</a></li>
-    	      <li><a href="http://quora.com/">quora.com</a></li>
-  	   </ul>
+    <br />
+    <h1 class="reverse"> Favorite websites </h1>
+     <br />
+       <ul class="reverse">
+              <li><a href="http://math.stackexchange.com/">math.stackexchange.com</a></li>
+              <li><a href="http://mathoverflow.net/">mathoverflow.net</a></li>
+              <li><a href="http://wikipedia.org/">wikipedia.org</a></li>
+              <li><a href="http://quora.com/">quora.com</a></li>
+       </ul>
   
-	<br />
-	<p class="reverse"> Here is a video of very cute pigs</p>
-	<br />
-	<iframe width="560" height="315" src="//www.youtube.com/embed/7WbA3N4_gHM" frameborder="0" allowfullscreen></iframe>
+    <br />
+    <p class="reverse"> Here is a video of very cute pigs</p>
+    <br />
+    <iframe width="560" height="315" src="//www.youtube.com/embed/7WbA3N4_gHM" frameborder="0" allowfullscreen></iframe>
 
-	<br />
-	<p class="reverse"> Check out the lyrics to a great song!</p>
-	
-	<br />
-	<a class="reverse" href="http://maxgold.github.io/lyrics.html">Lyrics</a>
+    <br />
+    <p class="reverse"> Check out the lyrics to a great song!</p>
+    
+    <br />
+    <a class="reverse" href="http://maxgold.github.io/lyrics.html">Lyrics</a>
 
-	<br />
-	<p class ="reverse"> Click on this link if you want to play an awesome game!</p>
-	<br />
-	<a class="reverse" href="guess.html">Number Game</a>
-	
-	<br />
-	<p class ="reverse"> Check out this Monte Carlo simulation.</p>
-	
-	<br />
-	<a class ="reverse" href="http://maxgold.github.io/pi.html"> Monte Carlo Simulation</a>
 
-			
+<script type="text/javascript">
+            function flip() {
+                //Makes the words readable i.e. flips them about the vertical axis
+                $(".reverse").css("-moztransform", "scale(1,1)");
+                $(".reverse").css("-webkittransform", "scale(1,1)");
+                        $(".reverse").css("transform", "scale(1,1)");
+                $("#vanish").fadeOut();         
+            }
+            function invert() {
+                //inverts the colors of the page
+                $("body").css("color", "blue")
+                $("body").css("background-color", "white")
+                $("img").css("-webkit-filter", "invert(100%)")
+            }
+            function uninvert() {
+                //restores the colors of the page
+                $("body").css("color", "orange")
+                $("body").css("background-color", "black")
+                $("img").css("-webkit-filter", "invert(0%)")
+            }
+        </script>
+
+            
 
 </body>
-
-</html>
 
 
 
